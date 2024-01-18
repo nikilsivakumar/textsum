@@ -118,3 +118,458 @@ x==========x]
 [2024-01-18 20:29:57,968: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
 
 x==========x]
+[2024-01-18 20:37:41,318: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 20:37:41,625: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 20:38:19,207: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 20:38:19,215: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 20:38:19,216: INFO: common: created directory at: artifacts]
+[2024-01-18 20:38:19,217: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 20:42:04,209: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 20:42:04,222: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 20:42:04,224: INFO: common: created directory at: artifacts]
+[2024-01-18 20:42:04,227: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 20:49:59,155: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 20:49:59,169: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 20:49:59,172: INFO: common: created directory at: artifacts]
+[2024-01-18 20:49:59,173: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 20:52:15,208: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 20:52:15,862: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 20:52:23,493: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 20:52:23,507: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 20:52:23,511: INFO: common: created directory at: artifacts]
+[2024-01-18 20:52:23,515: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 20:53:47,269: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 20:53:47,288: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 20:53:47,291: INFO: common: created directory at: artifacts]
+[2024-01-18 20:53:47,293: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 20:58:29,018: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 20:58:29,828: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 20:58:30,407: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 20:58:30,412: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 20:58:30,413: INFO: common: created directory at: artifacts]
+[2024-01-18 20:58:30,414: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:31:56,209: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:31:56,990: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:32:00,392: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 21:32:00,397: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:32:00,405: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:32:00,406: INFO: common: created directory at: artifacts]
+[2024-01-18 21:32:00,406: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 21:32:00,407: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-18 21:32:00,556: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:32:00,557: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 21:32:00,560: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:32:00,563: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:32:00,564: INFO: common: created directory at: artifacts]
+[2024-01-18 21:32:00,564: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 21:32:00,566: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:32:00,567: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 21:32:00,572: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:32:00,577: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:32:00,578: INFO: common: created directory at: artifacts]
+[2024-01-18 21:32:00,580: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 21:32:05,123: ERROR: main: [Errno 22] Invalid argument: 'C:/Users/nikil/Documents/Project/NLP Projects/TextSum/textsum/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\nikil\Documents\Project\NLP Projects\TextSum\textsum\main.py", line 36, in <module>
+    data_transformation.main()
+  File "c:\users\nikil\documents\project\nlp projects\textsum\textsum\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "c:\users\nikil\documents\project\nlp projects\textsum\textsum\src\textSummarizer\components\data_transformation.py", line 32, in convert
+    dataset_samsum_pt.save_to_disk(os.path.join(self.config.root_dir,"samsum_dataset"))
+  File "C:\Users\nikil\anaconda3\lib\site-packages\datasets\dataset_dict.py", line 1289, in save_to_disk
+    dataset.save_to_disk(
+  File "C:\Users\nikil\anaconda3\lib\site-packages\datasets\arrow_dataset.py", line 1535, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+  File "C:\Users\nikil\anaconda3\lib\site-packages\datasets\arrow_dataset.py", line 1559, in _save_to_disk_single
+    writer = ArrowWriter(
+  File "C:\Users\nikil\anaconda3\lib\site-packages\datasets\arrow_writer.py", line 336, in __init__
+    self.stream = self._fs.open(fs_token_paths[2][0], "wb")
+  File "C:\Users\nikil\anaconda3\lib\site-packages\fsspec\spec.py", line 1307, in open
+    f = self._open(
+  File "C:\Users\nikil\anaconda3\lib\site-packages\fsspec\implementations\local.py", line 180, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "C:\Users\nikil\anaconda3\lib\site-packages\fsspec\implementations\local.py", line 302, in __init__
+    self._open()
+  File "C:\Users\nikil\anaconda3\lib\site-packages\fsspec\implementations\local.py", line 307, in _open
+    self.f = open(self.path, mode=self.mode)
+OSError: [Errno 22] Invalid argument: 'C:/Users/nikil/Documents/Project/NLP Projects/TextSum/textsum/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+[2024-01-18 21:35:02,486: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:35:03,195: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:35:05,882: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 21:35:05,887: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:35:05,892: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:35:05,894: INFO: common: created directory at: artifacts]
+[2024-01-18 21:35:05,894: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 21:35:07,258: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6D56:0E11:F9398:12DB11:65A923DC
+Accept-Ranges: bytes
+Date: Thu, 18 Jan 2024 16:05:06 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10237-MAA
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1705593907.544943,VS0,VE383
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: edcd8df95578db4d462c9c92c2b21eea3e2aca93
+Expires: Thu, 18 Jan 2024 16:10:06 GMT
+Source-Age: 0
+
+]
+[2024-01-18 21:35:07,426: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:35:07,427: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 21:35:07,432: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:35:07,434: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:35:07,435: INFO: common: created directory at: artifacts]
+[2024-01-18 21:35:07,436: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 21:35:07,438: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:35:07,439: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 21:35:07,445: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:35:07,448: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:35:07,448: INFO: common: created directory at: artifacts]
+[2024-01-18 21:35:07,449: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 21:35:12,061: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:35:12,061: INFO: main: *******************]
+[2024-01-18 21:35:12,061: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 21:35:12,064: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:35:12,066: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:35:12,067: INFO: common: created directory at: artifacts]
+[2024-01-18 21:35:12,067: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:36:38,094: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:36:38,495: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:36:40,686: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 21:36:40,689: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:36:40,692: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:36:40,693: INFO: common: created directory at: artifacts]
+[2024-01-18 21:36:40,694: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 21:36:40,694: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-18 21:36:40,821: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:36:40,821: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 21:36:40,825: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:36:40,826: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:36:40,827: INFO: common: created directory at: artifacts]
+[2024-01-18 21:36:40,827: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 21:36:40,830: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:36:40,830: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 21:36:40,836: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:36:40,838: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:36:40,839: INFO: common: created directory at: artifacts]
+[2024-01-18 21:36:40,840: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 21:36:42,864: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:36:42,864: INFO: main: *******************]
+[2024-01-18 21:36:42,865: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 21:36:42,868: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:36:42,869: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:36:42,870: INFO: common: created directory at: artifacts]
+[2024-01-18 21:36:42,870: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:38:30,641: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:38:31,403: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:38:34,794: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 21:38:34,799: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:38:34,803: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:38:34,805: INFO: common: created directory at: artifacts]
+[2024-01-18 21:38:34,805: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 21:38:34,806: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-18 21:38:34,933: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:38:34,933: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 21:38:34,937: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:38:34,939: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:38:34,939: INFO: common: created directory at: artifacts]
+[2024-01-18 21:38:34,940: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 21:38:34,942: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:38:34,942: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 21:38:34,948: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:38:34,952: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:38:34,954: INFO: common: created directory at: artifacts]
+[2024-01-18 21:38:34,956: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 21:38:37,015: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:38:37,016: INFO: main: *******************]
+[2024-01-18 21:38:37,016: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 21:38:37,019: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:38:37,020: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:38:37,021: INFO: common: created directory at: artifacts]
+[2024-01-18 21:38:37,021: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:39:56,490: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:39:56,530: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:39:56,539: INFO: common: created directory at: artifacts]
+[2024-01-18 21:39:56,544: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:40:48,885: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:40:49,524: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:40:50,023: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:40:50,029: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:40:50,031: INFO: common: created directory at: artifacts]
+[2024-01-18 21:40:50,033: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:49:29,808: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:49:30,524: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:49:30,995: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:49:31,003: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:49:31,004: INFO: common: created directory at: artifacts]
+[2024-01-18 21:49:31,006: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:52:41,830: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:52:41,858: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:52:41,864: INFO: common: created directory at: artifacts]
+[2024-01-18 21:52:41,869: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:54:10,927: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:54:11,687: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:54:12,107: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:54:12,112: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:54:12,114: INFO: common: created directory at: artifacts]
+[2024-01-18 21:54:12,115: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:57:57,513: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:57:58,086: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:58:01,275: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 21:58:01,279: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:58:01,283: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:58:01,285: INFO: common: created directory at: artifacts]
+[2024-01-18 21:58:01,285: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 21:58:01,285: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-18 21:58:01,405: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:58:01,406: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 21:58:01,409: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:58:01,410: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:58:01,411: INFO: common: created directory at: artifacts]
+[2024-01-18 21:58:01,411: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 21:58:01,413: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:58:01,413: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 21:58:01,418: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:58:01,420: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:58:01,421: INFO: common: created directory at: artifacts]
+[2024-01-18 21:58:01,421: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 21:58:02,829: ERROR: main: [Errno 22] Invalid argument: 'C:/Users/nikil/Documents/Project/NLP Projects/TextSum/textsum/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "C:\Users\nikil\Documents\Project\NLP Projects\TextSum\textsum\main.py", line 36, in <module>
+    data_transformation.main()
+  File "c:\users\nikil\documents\project\nlp projects\textsum\textsum\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "c:\users\nikil\documents\project\nlp projects\textsum\textsum\src\textSummarizer\components\data_transformation.py", line 32, in convert
+    dataset_samsum_pt.save_to_disk(os.path.join(self.config.root_dir,"samsum_dataset"))
+  File "C:\Users\nikil\anaconda3\lib\site-packages\datasets\dataset_dict.py", line 1289, in save_to_disk
+    dataset.save_to_disk(
+  File "C:\Users\nikil\anaconda3\lib\site-packages\datasets\arrow_dataset.py", line 1535, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+  File "C:\Users\nikil\anaconda3\lib\site-packages\datasets\arrow_dataset.py", line 1559, in _save_to_disk_single
+    writer = ArrowWriter(
+  File "C:\Users\nikil\anaconda3\lib\site-packages\datasets\arrow_writer.py", line 336, in __init__
+    self.stream = self._fs.open(fs_token_paths[2][0], "wb")
+  File "C:\Users\nikil\anaconda3\lib\site-packages\fsspec\spec.py", line 1307, in open
+    f = self._open(
+  File "C:\Users\nikil\anaconda3\lib\site-packages\fsspec\implementations\local.py", line 180, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "C:\Users\nikil\anaconda3\lib\site-packages\fsspec\implementations\local.py", line 302, in __init__
+    self._open()
+  File "C:\Users\nikil\anaconda3\lib\site-packages\fsspec\implementations\local.py", line 307, in _open
+    self.f = open(self.path, mode=self.mode)
+OSError: [Errno 22] Invalid argument: 'C:/Users/nikil/Documents/Project/NLP Projects/TextSum/textsum/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+[2024-01-18 21:58:26,758: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:58:27,086: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:58:28,502: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 21:58:28,505: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:58:28,507: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:58:28,508: INFO: common: created directory at: artifacts]
+[2024-01-18 21:58:28,508: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 21:58:29,792: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6D56:0E11:F9398:12DB11:65A923DC
+Accept-Ranges: bytes
+Date: Thu, 18 Jan 2024 16:28:29 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10233-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1705595309.072879,VS0,VE289
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 2e4a678de04f0c8541d347d3b6e51659d2b392e0
+Expires: Thu, 18 Jan 2024 16:33:29 GMT
+Source-Age: 0
+
+]
+[2024-01-18 21:58:29,972: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:58:29,973: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 21:58:29,978: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:58:29,980: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:58:29,981: INFO: common: created directory at: artifacts]
+[2024-01-18 21:58:29,981: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 21:58:29,983: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:58:29,984: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 21:58:29,989: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:58:29,992: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:58:29,993: INFO: common: created directory at: artifacts]
+[2024-01-18 21:58:29,993: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 21:58:34,808: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:58:34,809: INFO: main: *******************]
+[2024-01-18 21:58:34,809: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 21:58:34,812: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:58:34,813: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:58:34,813: INFO: common: created directory at: artifacts]
+[2024-01-18 21:58:34,814: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:59:11,358: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:59:11,761: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:59:13,851: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 21:59:13,854: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:59:13,856: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:59:13,857: INFO: common: created directory at: artifacts]
+[2024-01-18 21:59:13,857: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 21:59:13,857: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-18 21:59:13,980: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:59:13,981: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 21:59:13,984: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:59:13,986: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:59:13,986: INFO: common: created directory at: artifacts]
+[2024-01-18 21:59:13,987: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 21:59:13,988: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:59:13,989: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 21:59:13,994: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:59:13,997: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:59:13,998: INFO: common: created directory at: artifacts]
+[2024-01-18 21:59:13,998: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 21:59:15,543: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:59:15,544: INFO: main: *******************]
+[2024-01-18 21:59:15,544: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 21:59:15,547: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:59:15,548: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:59:15,549: INFO: common: created directory at: artifacts]
+[2024-01-18 21:59:15,549: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 21:59:55,951: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 21:59:56,439: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 21:59:58,662: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 21:59:58,666: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:59:58,667: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:59:58,668: INFO: common: created directory at: artifacts]
+[2024-01-18 21:59:58,668: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 21:59:58,668: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-18 21:59:58,791: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:59:58,792: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 21:59:58,795: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:59:58,796: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:59:58,796: INFO: common: created directory at: artifacts]
+[2024-01-18 21:59:58,797: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 21:59:58,798: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 21:59:58,799: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 21:59:58,803: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 21:59:58,806: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 21:59:58,807: INFO: common: created directory at: artifacts]
+[2024-01-18 21:59:58,808: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 22:00:00,227: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 22:00:00,227: INFO: main: *******************]
+[2024-01-18 22:00:00,227: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 22:00:00,230: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 22:00:00,232: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 22:00:00,232: INFO: common: created directory at: artifacts]
+[2024-01-18 22:00:00,232: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 22:01:14,429: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 22:01:14,914: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 22:01:15,302: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 22:01:15,307: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 22:01:15,308: INFO: common: created directory at: artifacts]
+[2024-01-18 22:01:15,309: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 22:04:08,061: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 22:04:08,726: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 22:04:09,190: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 22:04:09,197: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 22:04:09,199: INFO: common: created directory at: artifacts]
+[2024-01-18 22:04:09,200: INFO: common: created directory at: artifacts/model_trainer]
+[2024-01-18 22:07:57,570: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 22:07:58,259: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 22:08:23,534: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 22:08:23,541: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 22:08:23,542: INFO: common: created directory at: artifacts]
+[2024-01-18 22:08:23,544: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-01-18 22:13:48,925: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-01-18 22:13:49,246: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-18 22:13:51,528: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-18 22:13:51,532: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 22:13:51,534: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 22:13:51,535: INFO: common: created directory at: artifacts]
+[2024-01-18 22:13:51,535: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-01-18 22:13:51,536: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-18 22:13:51,665: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-18 22:13:51,665: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-18 22:13:51,669: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 22:13:51,670: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 22:13:51,670: INFO: common: created directory at: artifacts]
+[2024-01-18 22:13:51,671: INFO: common: created directory at: artifacts/data_validation]
+[2024-01-18 22:13:51,672: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 22:13:51,673: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-18 22:13:51,677: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 22:13:51,680: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 22:13:51,681: INFO: common: created directory at: artifacts]
+[2024-01-18 22:13:51,682: INFO: common: created directory at: artifacts/data_transformation]
+[2024-01-18 22:13:53,179: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 22:13:53,180: INFO: main: *******************]
+[2024-01-18 22:13:53,180: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-01-18 22:13:53,184: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 22:13:53,186: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-01-18 22:13:53,187: INFO: common: created directory at: artifacts]
+[2024-01-18 22:13:53,187: INFO: common: created directory at: artifacts/model_trainer]
